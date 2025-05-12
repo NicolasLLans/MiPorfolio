@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos para SEO y responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio personal - Desarrollador web" />
+    <title>Mi Portfolio Personal</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Título principal de la página -->
+      <h1>Mi Portfolio Personal</h1>
+      <p>
+        Bienvenido a mi espacio profesional donde muestro mis habilidades y
+        proyectos
+      </p>
+    </header>
+
+    <main>
+      <section class="profile">
+        <!-- Imagen personal -->
+        <div class="profile-img">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQE8n1VajZwBiw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686084573976?e=1749081600&v=beta&t=OrhE7udJhY5HgurfqKkVzdmI-pUp1gSdnT-qmS-skXI"
+            alt="Mi foto de perfil"
+            id="profile-photo"
+          />
+        </div>
+
+        <article class="about-me">
+          <h2>Acerca de mí</h2>
+          <p>
+            Soy un desarrollador web apasionado por crear experiencias digitales
+            únicas. Me encanta aprender nuevas tecnologías y enfrentar desafíos
+            creativos.
+          </p>
+          <p>
+            Actualmente estoy estudiando programación y expandiendo mis
+            conocimientos en el desarrollo web.
+          </p>
+          <!-- Enlaces de interés -->
+          <div class="links">
+            <p>
+              Encuéntrame en:
+              <a href="https://github.com/NicolasLLans" target="_blank"
+                >GitHub</a
+              >
+              |
+              <a
+                href="https://linkedin.com/in/nicolás-lautaro-lanselota/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="skills">
+        <h2>Mis Conocimientos</h2>
+        <!-- Tabla de habilidades -->
+        <table id="skills-table">
+          <thead>
+            <tr>
+              <th>Tecnologías que conozco</th>
+              <th>Tecnologías que quiero aprender</th>
+              <th>Mis hobbies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML5</td>
+              <td>React</td>
+              <td>Fotografía</td>
+            </tr>
+            <tr>
+              <td>CSS3</td>
+              <td>Node.js</td>
+              <td>Senderismo</td>
+            </tr>
+            <tr>
+              <td>JavaScript básico</td>
+              <td>Python</td>
+              <td>Lectura</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="contact">
+        <h2>Contacto</h2>
+        <!-- Formulario de contacto -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Portfolio Personal. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

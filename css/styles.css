@@ -1,0 +1,201 @@
+/* 
+* Estilos generales para el portfolio
+* Autor: [Tu nombre]
+* Fecha: Abril 2025
+*/
+
+/* Variables CSS para facilitar mantenimiento futuro */
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #166088;
+  --accent-color: #4fc3f7;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --card-background: #ffffff;
+}
+
+/* Estilos generales y reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Web-safe fallbacks */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Encabezado de la página */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* Sección de perfil */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  /* TODO: Mejorar la responsividad para dispositivos móviles */
+}
+
+.profile-img {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+#profile-photo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+  /* TODO: Añadir efectos hover al pasar el cursor */
+}
+
+.about-me {
+  flex: 2;
+  min-width: 300px;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Sección de habilidades */
+.skills {
+  margin-bottom: 3rem;
+}
+
+#skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#skills-table th,
+#skills-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#skills-table th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+#skills-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#skills-table tr:hover {
+  background-color: #e9f3ff;
+}
+
+/* Sección de contacto */
+.contact {
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* TODO: Mejorar la validación visual del formulario */
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  /* TODO: Añadir animaciones al botón al hacer click */
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
