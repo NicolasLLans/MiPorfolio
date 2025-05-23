@@ -97,10 +97,10 @@ Este proyecto es un portfolio web profesional desarrollado como parte de la **Pr
 ## 👀 Vista Previa
 
 ### Versión 2
-<img src="assets/img/Camptura-V2.png" alt="portfolio" width="600">
+<img src="assets/img/Captura-V2.png" alt="portfolio" width="600">
 
 ### Versión 1
-<img src="assets/img/Camptura-V1.png" alt="portfolio" width="600">
+<img src="assets/img/Captura-V1.png" alt="portfolio" width="600">
 
 ---
 
