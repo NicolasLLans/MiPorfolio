@@ -1,258 +1,365 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <!-- Metadatos para SEO y responsive design -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio personal - Desarrollador web Full Stack">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio personal - Desarrollador web Full Stack"
+    />
     <title>Nicolás Lautaro - Desarrollador Web Full Stack</title>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Enlace al archivo CSS externo -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!-- Navegación principal -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">NL</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">NL</a>
         </div>
+        <!-- Botón menú hamburguesa -->
+        <button id="menu-toggle" class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Modal de navegación -->
+        <div id="nav-modal" class="nav-modal">
+          <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <ul class="modal-menu">
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre mí</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Sección principal -->
     <header id="home" class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>Nicolás Lautaro</h1>
-                <p class="hero-subtitle">Desarrollador Web Full Stack</p>
-                <p class="hero-description">Creando experiencias digitales innovadoras con código limpio y diseño moderno</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contáctame</a>
-                    <a href="#about" class="btn btn-secondary">Conoce más</a>
-                </div>
-            </div>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Nicolás Lautaro</h1>
+          <p class="hero-subtitle">Desarrollador Web Full Stack</p>
+          <p class="hero-description">
+            Creando experiencias digitales innovadoras con código limpio y
+            diseño moderno
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Contáctame</a>
+            <a href="#about" class="btn btn-secondary">Conoce más</a>
+          </div>
         </div>
+      </div>
     </header>
 
     <main>
-        <!-- Sección Sobre mí -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">Sobre mí</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Soy un desarrollador web apasionado por crear soluciones digitales que marquen la diferencia. Con más de 4 años de experiencia en el desarrollo frontend y backend, me especializo en crear aplicaciones web modernas, responsivas y centradas en el usuario.</p>
-                        
-                        <p>Mi enfoque se basa en escribir código limpio, mantenible y escalable, siempre siguiendo las mejores prácticas de la industria. Me encanta aprender nuevas tecnologías y mantenerme actualizado con las últimas tendencias del desarrollo web.</p>
-                        
-                        <p>Cuando no estoy programando, disfruto de la fotografía, el senderismo y leer sobre nuevas tecnologías. Creo firmemente que la creatividad y la técnica van de la mano para crear productos excepcionales.</p>
-                        
-                        <div class="social-links">
-                            <a href="https://github.com/NicolasLLans/" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/nicol%C3%A1s-lautaro-lanselota/" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="about-image">
-                        <img src="https://avatars.githubusercontent.com/u/94724163?v=4" alt="Nicolás Lautaro - Desarrollador Web" id="profile-photo">
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Sección Sobre mí -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">Sobre mí</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Soy un desarrollador web apasionado por crear soluciones
+                digitales que marquen la diferencia. Con más de 4 años de
+                experiencia en el desarrollo frontend y backend, me especializo
+                en crear aplicaciones web modernas, responsivas y centradas en
+                el usuario.
+              </p>
 
-        <!-- Sección Qué hago -->
-        <section id="services" class="services">
-            <div class="container">
-                <h2 class="section-title">¿Qué hago?</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Desarrollo Frontend</h3>
-                        <p>Creo interfaces de usuario modernas y responsivas utilizando HTML5, CSS3, JavaScript y frameworks como Angular. Me enfoco en la experiencia del usuario y el rendimiento.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Desarrollo Backend</h3>
-                        <p>Desarrollo APIs robustas y escalables utilizando Node.js, JAVA y bases de datos. Me especializo en crear arquitecturas seguras y eficientes.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Diseño Responsivo</h3>
-                        <p>Todas mis aplicaciones están optimizadas para funcionar perfectamente en cualquier dispositivo, desde móviles hasta desktop.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3>Optimización</h3>
-                        <p>Optimizo el rendimiento de aplicaciones web, mejorando tiempos de carga y experiencia del usuario mediante mejores prácticas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+              <p>
+                Mi enfoque se basa en escribir código limpio, mantenible y
+                escalable, siempre siguiendo las mejores prácticas de la
+                industria. Me encanta aprender nuevas tecnologías y mantenerme
+                actualizado con las últimas tendencias del desarrollo web.
+              </p>
 
-        <!-- Sección de habilidades -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">Mis Habilidades</h2>
-                <div class="skills-content">
-                    <div class="skills-description">
-                        <p>A lo largo de mi carrera he trabajado con diversas tecnologías y herramientas. Aquí tienes un resumen de las principales tecnologías que manejo y las que estoy aprendiendo actualmente.</p>
-                    </div>
-                    
-                    <!-- Tabla de habilidades mejorada -->
-                    <div class="table-container">
-                        <table id="skills-table">
-                            <thead>
-                                <tr>
-                                    <th><i class="fas fa-check-circle"></i> Domino</th>
-                                    <th><i class="fas fa-graduation-cap"></i> Aprendiendo</th>
-                                    <th><i class="fas fa-heart"></i> Intereses</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>HTML5 & CSS3</td>
-                                    <td>React Native</td>
-                                    <td>Inteligencia Artificial</td>
-                                </tr>
-                                <tr>
-                                    <td>JavaScript ES6+</td>
-                                    <td>TypeScript</td>
-                                    <td>Blockchain</td>
-                                </tr>
-                                <tr>
-                                    <td>Angular</td>
-                                    <td>Next.js</td>
-                                    <td>Machine Learning</td>
-                                </tr>
-                                <tr>
-                                    <td>Node.js</td>
-                                    <td>Docker</td>
-                                    <td>UI/UX Design</td>
-                                </tr>
-                                <tr>
-                                    <td>Git & GitHub</td>
-                                    <td>AWS</td>
-                                    <td>Fotografía</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
+              <p>
+                Cuando no estoy programando, disfruto de la fotografía, el
+                senderismo y leer sobre nuevas tecnologías. Creo firmemente que
+                la creatividad y la técnica van de la mano para crear productos
+                excepcionales.
+              </p>
 
-        <!-- Sección de contacto -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contacto</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>¡Hablemos!</h3>
-                        <p>¿Tienes un proyecto en mente? ¿Necesitas ayuda con tu sitio web? No dudes en contactarme. Estaré encantado de ayudarte a hacer realidad tus ideas.</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>Hola@nicoweb.com.ar</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+54 11 1234-5678</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Buenos Aires, Argentina</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form-container">
-                        <!-- Formulario de contacto mejorado -->
-                        <form class="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="nombre">Nombre *</label>
-                                    <input type="text" id="nombre" name="nombre" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="apellido">Apellido *</label>
-                                    <input type="text" id="apellido" name="apellido" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="telefono">Teléfono</label>
-                                    <input type="tel" id="telefono" name="telefono">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="asunto">Asunto</label>
-                                <input type="text" id="asunto" name="asunto">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje *</label>
-                                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="submit-btn">
-                                <i class="fas fa-paper-plane"></i>
-                                Enviar Mensaje
-                            </button>
-                        </form>
-                    </div>
-                </div>
+              <div class="social-links">
+                <a
+                  href="https://github.com/NicolasLLans/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nicol%C3%A1s-lautaro-lanselota/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
             </div>
-        </section>
+
+            <div class="about-image">
+              <img
+                src="https://avatars.githubusercontent.com/u/94724163?v=4"
+                alt="Nicolás Lautaro - Desarrollador Web"
+                id="profile-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Qué hago -->
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="section-title">¿Qué hago?</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Desarrollo Frontend</h3>
+              <p>
+                Creo interfaces de usuario modernas y responsivas utilizando
+                HTML5, CSS3, JavaScript y frameworks como Angular. Me enfoco en
+                la experiencia del usuario y el rendimiento.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Desarrollo Backend</h3>
+              <p>
+                Desarrollo APIs robustas y escalables utilizando Node.js, JAVA y
+                bases de datos. Me especializo en crear arquitecturas seguras y
+                eficientes.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Diseño Responsivo</h3>
+              <p>
+                Todas mis aplicaciones están optimizadas para funcionar
+                perfectamente en cualquier dispositivo, desde móviles hasta
+                desktop.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Optimización</h3>
+              <p>
+                Optimizo el rendimiento de aplicaciones web, mejorando tiempos
+                de carga y experiencia del usuario mediante mejores prácticas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de habilidades -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">Mis Habilidades</h2>
+          <div class="skills-content">
+            <div class="skills-description">
+              <p>
+                A lo largo de mi carrera he trabajado con diversas tecnologías y
+                herramientas. Aquí tienes un resumen de las principales
+                tecnologías que manejo y las que estoy aprendiendo actualmente.
+              </p>
+            </div>
+
+            <!-- Tabla de habilidades mejorada -->
+            <div class="table-container">
+              <table id="skills-table">
+                <thead>
+                  <tr>
+                    <th><i class="fas fa-check-circle"></i> Domino</th>
+                    <th><i class="fas fa-graduation-cap"></i> Aprendiendo</th>
+                    <th><i class="fas fa-heart"></i> Intereses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML5 & CSS3</td>
+                    <td>React Native</td>
+                    <td>Inteligencia Artificial</td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript ES6+</td>
+                    <td>TypeScript</td>
+                    <td>Blockchain</td>
+                  </tr>
+                  <tr>
+                    <td>Angular</td>
+                    <td>Next.js</td>
+                    <td>Machine Learning</td>
+                  </tr>
+                  <tr>
+                    <td>Node.js</td>
+                    <td>Docker</td>
+                    <td>UI/UX Design</td>
+                  </tr>
+                  <tr>
+                    <td>Git & GitHub</td>
+                    <td>AWS</td>
+                    <td>Fotografía</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de contacto -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contacto</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>¡Hablemos!</h3>
+              <p>
+                ¿Tienes un proyecto en mente? ¿Necesitas ayuda con tu sitio web?
+                No dudes en contactarme. Estaré encantado de ayudarte a hacer
+                realidad tus ideas.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>Hola@nicoweb.com.ar</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+54 11 1234-5678</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Buenos Aires, Argentina</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <!-- Formulario de contacto mejorado -->
+              <form class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="apellido">Apellido *</label>
+                    <input type="text" id="apellido" name="apellido" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="asunto">Asunto</label>
+                  <input type="text" id="asunto" name="asunto" />
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    required
+                    placeholder="Cuéntame sobre tu proyecto..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <i class="fas fa-paper-plane"></i>
+                  Enviar Mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Nicolas Lautaro. Todos los derechos reservados.</p>
-                <div class="footer-links">
-                    <a href="#home">Inicio</a>
-                    <a href="#about">Sobre mí</a>
-                    <a href="#contact">Contacto</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Nicolas Lautaro. Todos los derechos reservados.</p>
+          <div class="footer-links">
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#contact">Contacto</a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navModal = document.getElementById("nav-modal");
+      const closeModal = document.getElementById("close-modal");
+
+      menuToggle.addEventListener("click", () => {
+        navModal.classList.add("active");
+      });
+
+      closeModal.addEventListener("click", () => {
+        navModal.classList.remove("active");
+      });
+
+      // Cierra el modal al hacer clic fuera del contenido
+      window.addEventListener("click", (e) => {
+        if (e.target === navModal) {
+          navModal.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
 </html>
